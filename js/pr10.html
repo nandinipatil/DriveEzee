@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+ 
+<head>
+    <title>Calculate Width and Height of the Window</title>
+</head>
+ 
+<body style="text-align:center;">
+    <h1 style="color:green;">
+            GeeksforGeeks
+        </h1>
+    <p id="GFG_UP" style="font-size: 19px; font-weight: bold;"></p>
+ 
+    <button onclick="GFG_Fun()">Click Here</button>
+    <p id="GFG_DOWN"
+       style="color: green;
+              font-size: 24px;
+              font-weight: bold;">
+    </p>
+ 
+     
+    <!-- Script to display the window width and height -->
+    <script>
+    var el_up = document.getElementById("GFG_UP");
+    var el_down = document.getElementById("GFG_DOWN");
+    el_up.innerHTML = "Click on the button to get the"
+    + " width and height of the Window";
+ 
+    function GFG_Fun() {
+        var width = window.innerWidth;
+        var Height = window.innerHeight;
+        el_down.innerHTML = "Width: " + width + " pixels"
+        + ", " + "Height: " + Height + " pixels";
+    }
+    </script>
+</body>
+ 
+</html>
+
